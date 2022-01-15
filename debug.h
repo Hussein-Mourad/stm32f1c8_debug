@@ -2,6 +2,10 @@
 
 HardwareSerial Serial3(PB11, PB10);
 
+#ifndef DEBUG
+#define DEBUG
+#endif
+
 #ifdef DEBUG
 #define debug(x) Serial.print(x)
 #define debug1(x) Serial1.print(x)
